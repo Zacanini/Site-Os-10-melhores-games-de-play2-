@@ -146,7 +146,7 @@ a.navA{
         display: grid;
         grid-template-columns: 1fr 1fr;
         overflow: hidden;
-        gap: 0  20px;
+        gap: 10px  20px;
         grid-template-areas:
         'nav nav'
         'titulo1 titulo1'
@@ -170,6 +170,11 @@ a.navA{
         'video5 paragrafo6'
         'GT paragrafo6'
         'GT2 paragrafo6'
+        'titulo8 titulo8'
+        'paragrafo7 video6'
+        'titulo9 titulo9'
+        'video7 paragrafo8'
+        'gow1 paragrafo8'
         ;
     }
 
@@ -341,4 +346,42 @@ a.navA{
         display: flex;
         width: 100%;
     }
+
+
+    #titulo8{
+        grid-area: titulo8;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo7{
+        grid-area: paragrafo7;
+        font-size: 20px;
+    }
+    #video6{
+        grid-area: video6;
+        height: 95%;
+    }
+
+
+    #titulo9{
+        grid-area: titulo9;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo8{
+        grid-area: paragrafo8;
+        font-size: 20px;
+    }
+    #video7{
+        grid-area: video7;
+    }
+    #gow1{
+        grid-area: gow1;
+        display: flex;
+        width: 100%;
+
+    }
+
 }
