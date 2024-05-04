@@ -21,14 +21,20 @@ body{
 
 nav{
     display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:safe;
     width: 100%;
     position: sticky;
-    top: 5px;
+    top: -15px;
     border: 1px solid black;
     border-radius: 20px;
-    justify-content: space-around;
     background-color: var(--cor--primaria); 
     text-align:center ;
+    
+}
+footer{
+    border-top: 1px solid var(--cor--primaria);
     
 }
 
@@ -44,7 +50,7 @@ nav{
 }
 
 .navFi{
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin: 5px 0;
     background-color: var(--cor1--para--botao);
     border-radius:10px ;
@@ -52,7 +58,7 @@ nav{
 }
 
 .navFi:hover{
-    padding: 10px 10px;
+    padding: 8px 8px;
     margin: 0px 0;
 }
 
@@ -101,6 +107,9 @@ a.navA{
     margin-top: 25px;
     margin-bottom: 20px;
 }
+.play22{
+    display: none;
+}
 
 .video{
     display: flex;
@@ -110,4 +119,226 @@ a.navA{
     margin-top: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+
+.botao{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: var(--cor1--para--botao);
+    border-radius:10px ;
+    color: black;
+    
+}
+
+.botao:hover{
+    padding: 8px 8px;
+    margin: 0px 0;
+}
+
+.img{
+    display: none;
+    border-radius: 10px;
+}
+
+@media (min-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        gap: 0  20px;
+        grid-template-areas:
+        'nav nav'
+        'titulo1 titulo1'
+        'titulo2 play22'
+        'paragrafo1 play22'
+        'titulo3 titulo3'
+        'video1 paragrafo2'
+        'gta3 paragrafo2'
+        'titulo4 titulo4'
+        'paragrafo3 video2'
+        'paragrafo3 re1'
+        'paragrafo3 re2'
+        'titulo5 titulo5'
+        'video3 paragrafo4'
+        'titulo6 titulo6'
+        'paragrafo5 video4'
+        'paragrafo5 gtavc1'
+        'paragrafo5 gtavc2'
+        'paragrafo5 gtavc3'
+        'titulo7 titulo7'
+        'video5 paragrafo6'
+        'GT paragrafo6'
+        'GT2 paragrafo6'
+        ;
+    }
+
+    .navegacao{
+        grid-area: nav;
+        
+        
+
+    }
+    .navFi{
+        padding: 10px 15px;
+        margin: 5px 0;
+        background-color: var(--cor1--para--botao);
+        border-radius:10px ;
+        
+    }
+    .navFi:hover{
+        padding: 15px 15px;
+        margin: 0px 0;
+    }
+
+
+    #titulo1{
+        grid-area: titulo1;
+        font-size: 45px ;
+    }
+
+
+    #titulo2{
+        grid-area: titulo2;
+        font-size: 35px;
+    }
+    #paragrafo1{
+        grid-area: paragrafo1;
+        font-size: 20px;
+    }
+    .play2{
+       display: none;
+        
+    }
+    .play22{
+        grid-area: play22;
+        display: flex;
+        width: 100%; 
+        height: 80%;
+        margin-top: 100px;
+        
+    }
+
+
+    #titulo3{
+        grid-area: titulo3;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo2{
+        grid-area: paragrafo2;
+        font-size: 20px;
+    }
+    #video1{
+        grid-area: video1;
+    }
+    #imagemgta3{
+        grid-area: gta3;
+        display: flex;
+        width: 100%; 
+    }
+
+
+    #titulo4{
+        grid-area: titulo4;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo3{
+        grid-area: paragrafo3;
+        font-size: 20px;
+    }
+    #video2{
+        grid-area: video2;
+        height: 90%;
+        
+    }
+    #imagemRE1{
+        grid-area: re1;
+        display: flex;
+        width: 100%; 
+        height: 90%;
+    }
+    #imagemRE2{
+        grid-area: re2;
+        display: flex;
+        width: 100%; 
+        height: 90%;
+    }
+
+
+    #titulo5{
+        grid-area: titulo5;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo4{
+        grid-area: paragrafo4;
+        font-size: 20px;
+    }
+    #video3{
+        grid-area: video3;
+        height: 95%;
+        
+    }
+
+
+    #titulo6{
+        grid-area: titulo6;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo5{
+        grid-area: paragrafo5;
+        font-size: 20px;
+    }
+    #video4{
+        grid-area: video4;
+    }
+    #imagemgtavc{
+        grid-area: gtavc1;
+        display: flex;
+        width: 100%; 
+    }
+    #imagemgtavc2{
+        grid-area: gtavc2;
+        display: flex;
+        width: 100%;
+    }
+    #imagemgtavc3{
+        grid-area: gtavc3;
+        display: flex;
+        width: 100%;
+        height: 90%;
+    }
+
+
+    #titulo7{
+        grid-area: titulo7;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo6{
+        grid-area: paragrafo6;
+        font-size: 20px;
+    }
+    #video5{
+        grid-area: video5;
+        height: 80%;
+    }
+    #imagemgGT1{
+        grid-area: GT;
+        display: flex;
+        width: 100%;
+    }
+    #imagemgGT2{
+        grid-area: GT2;
+        display: flex;
+        width: 100%;
+    }
 }
