@@ -23,7 +23,6 @@ nav{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
-    align-items:safe;
     width: 100%;
     position: sticky;
     top: -15px;
@@ -141,7 +140,7 @@ a.navA{
     border-radius: 10px;
 }
 
-@media (min-width:768px){
+@media (min-width:768px) and (max-width:1024px){
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -174,15 +173,36 @@ a.navA{
         'paragrafo7 video6'
         'titulo9 titulo9'
         'video7 paragrafo8'
+        'gowLogo paragrafo8'
         'gow1 paragrafo8'
+        'gow2 paragrafo8'
+        'gow3 paragrafo8'
+        'titulo10 titulo10'
+        'paragrafo9 video8'
+        'paragrafo9 sc1'
+        'paragrafo9 sc2'
+        'titulo11 titulo11'
+        'video9 paragrafo10'
+        'mgs1 paragrafo10'
+        'titulo12 titulo12'
+        'paragrafo11 video10'
+        'paragrafo11 sa1'
+        'paragrafo11 sa2'
+        'paragrafo11 sa3'
+        'paragrafo11 sa4'
+        'titulo13 titulo13'
+        'paragrafo12 paragrafo12'
+        'footer footer'
+        
+        
         ;
     }
+
 
     .navegacao{
         grid-area: nav;
         
         
-
     }
     .navFi{
         padding: 10px 15px;
@@ -237,6 +257,7 @@ a.navA{
     }
     #video1{
         grid-area: video1;
+        margin: 0;
     }
     #imagemgta3{
         grid-area: gta3;
@@ -258,7 +279,7 @@ a.navA{
     #video2{
         grid-area: video2;
         height: 90%;
-        
+        margin: 0;
     }
     #imagemRE1{
         grid-area: re1;
@@ -287,6 +308,7 @@ a.navA{
     #video3{
         grid-area: video3;
         height: 95%;
+        margin: 0;
         
     }
 
@@ -303,6 +325,7 @@ a.navA{
     }
     #video4{
         grid-area: video4;
+        margin: 0;
     }
     #imagemgtavc{
         grid-area: gtavc1;
@@ -335,6 +358,7 @@ a.navA{
     #video5{
         grid-area: video5;
         height: 80%;
+        margin: 0;
     }
     #imagemgGT1{
         grid-area: GT;
@@ -360,7 +384,8 @@ a.navA{
     }
     #video6{
         grid-area: video6;
-        height: 95%;
+        height: 100%;
+        margin: 0;
     }
 
 
@@ -368,7 +393,6 @@ a.navA{
         grid-area: titulo9;
         text-align: center;
         font-size: 35px;
-        
     }
     #paragrafo8{
         grid-area: paragrafo8;
@@ -376,12 +400,459 @@ a.navA{
     }
     #video7{
         grid-area: video7;
+        height: 100%;
+        margin: 0;
     }
     #gow1{
         grid-area: gow1;
         display: flex;
         width: 100%;
-
+        height: 100%;
+    }
+    #gow2{
+        grid-area: gow2;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    #gow3{
+        grid-area: gow3;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    #gowLogo{
+        grid-area: gowLogo;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
+
+    #titulo10{
+        grid-area: titulo10;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo9{
+        grid-area: paragrafo9;
+        font-size: 20px;
+    }
+    #video8{
+        grid-area: video8;
+        height: 100%;
+        margin: 0;
+    }
+    #sc1{
+        grid-area: sc1;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    #sc2{
+        grid-area: sc2;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    #titulo11{
+        grid-area: titulo11;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo10{
+        grid-area: paragrafo10;
+        font-size: 20px;
+    }
+    #video9{
+        grid-area: video9;
+        height: 100%;
+        margin: 0;
+    }
+    #mgs1{
+        grid-area: mgs1;
+        display: flex;
+        width: 100%;
+        height: 95%;
+    }
+
+
+    #titulo12{
+        grid-area: titulo12;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo11{
+        grid-area: paragrafo11;
+        font-size: 20px;
+    }
+    #video10{
+        grid-area: video10;
+        height: 100%;
+        margin: 0;
+    }
+    #sa1{
+        grid-area: sa1;
+        display: flex;
+        width: 100%;
+        
+    }
+    #sa2{
+        grid-area: sa2;
+        display: flex;
+        width: 100%;
+        
+    }
+    #sa3{
+        grid-area: sa3;
+        display: flex;
+        width: 100%;
+        
+    }
+    #sa4{
+        grid-area: sa4;
+        display: flex;
+        width: 100%;
+        
+    }
+
+
+    #titulo13{
+        grid-area: titulo13;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo12{
+        grid-area: paragrafo12;
+        font-size: 20px;
+    }
+
+    footer{
+        grid-area: footer;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        gap: 10px  20px;
+        grid-template-areas:
+        'nav nav'
+        'titulo1 titulo1'
+        'titulo2 titulo2'
+        'paragrafo1 play2'
+        'titulo3 titulo3'
+        'video1 paragrafo2'
+        'video1 paragrafo2'
+        'titulo4 titulo4'
+        'paragrafo3 video2'
+        'paragrafo3 video2'
+        'paragrafo3 re2'
+        'titulo5 titulo5'
+        'video3 paragrafo4'
+        'titulo6 titulo6'
+        'paragrafo5 video4'
+        'paragrafo5 gtavc1'
+        'titulo7 titulo7'
+        'video5 paragrafo6'
+        'GT2 paragrafo6'
+        'titulo8 titulo8'
+        'paragrafo7 video6'
+        'titulo9 titulo9'
+        'video7 paragrafo8'
+        'gow2 paragrafo8'
+        'titulo10 titulo10'
+        'paragrafo9 video8'
+        'paragrafo9 sc1'
+        'titulo11 titulo11'
+        'video9 paragrafo10'
+        'titulo12 titulo12'
+        'paragrafo11 video10'
+        'paragrafo11 sa1'
+        'titulo13 titulo13'
+        'paragrafo12 paragrafo12'
+        'footer footer'
+        ;
+    }
+
+
+    .navegacao{
+        grid-area: nav;
+        
+        
+    }
+    .navFi{
+        padding: 15px 25px;
+        margin: 5px 0;
+        background-color: var(--cor1--para--botao);
+        border-radius:10px ;
+        font-size: 20px;
+        
+    }
+    .navFi:hover{
+        padding: 20px 30px;
+        margin: 0px 0;
+    }
+
+
+    #titulo1{
+        grid-area: titulo1;
+        font-size: 45px ;
+    }
+
+
+    #titulo2{
+        grid-area: titulo2;
+        font-size: 35px;
+        text-align: center;
+    }
+    #paragrafo1{
+        grid-area: paragrafo1;
+        font-size: 20px;
+    }
+    .play2{
+        grid-area: play2;
+        display: flex;
+        width: 100%; 
+        margin: 0;
+        
+    }
+    .play22{
+        display: none;
+        
+    }
+
+
+    #titulo3{
+        grid-area: titulo3;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo2{
+        grid-area: paragrafo2;
+        font-size: 20px;
+    }
+    #video1{
+        grid-area: video1;
+        margin: 0;
+        height: 95%;
+    }
+    
+
+
+    #titulo4{
+        grid-area: titulo4;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo3{
+        grid-area: paragrafo3;
+        font-size: 20px;
+    }
+    #video2{
+        grid-area: video2;
+        height: 100%;
+        margin: 0;
+    }
+    #imagemRE2{
+        grid-area: re2;
+        display: flex;
+        width: 100%; 
+        height: 95%;
+    }
+
+
+    #titulo5{
+        grid-area: titulo5;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo4{
+        grid-area: paragrafo4;
+        font-size: 20px;
+    }
+    #video3{
+        grid-area: video3;
+        height: 95%;
+        margin: 0;
+        
+    }
+
+
+    #titulo6{
+        grid-area: titulo6;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo5{
+        grid-area: paragrafo5;
+        font-size: 20px;
+    }
+    #video4{
+        grid-area: video4;
+        margin: 0;
+        height: 100%;
+    }
+    #imagemgtavc{
+        grid-area: gtavc1;
+        display: flex;
+        width: 100%; 
+        height: 95%;
+    }
+   
+
+
+    #titulo7{
+        grid-area: titulo7;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo6{
+        grid-area: paragrafo6;
+        font-size: 20px;
+    }
+    #video5{
+        grid-area: video5;
+        height: 100%;
+        margin: 0;
+    }
+    #imagemgGT2{
+        grid-area: GT2;
+        display: flex;
+        width: 100%;
+        height: 95%;
+    }
+
+
+    #titulo8{
+        grid-area: titulo8;
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    #paragrafo7{
+        grid-area: paragrafo7;
+        font-size: 20px;
+    }
+    #video6{
+        grid-area: video6;
+        height: 100%;
+        margin: 0;
+    }
+
+
+    #titulo9{
+        grid-area: titulo9;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo8{
+        grid-area: paragrafo8;
+        font-size: 20px;
+    }
+    #video7{
+        grid-area: video7;
+        height: 100%;
+        margin: 0;
+    }
+    #gow2{
+        grid-area: gow2;
+        display: flex;
+        width: 100%;
+        height: 95%;
+    }
+    
+
+
+    #titulo10{
+        grid-area: titulo10;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo9{
+        grid-area: paragrafo9;
+        font-size: 20px;
+    }
+    #video8{
+        grid-area: video8;
+        height: 100%;
+        margin: 0;
+    }
+    #sc1{
+        grid-area: sc1;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    #titulo11{
+        grid-area: titulo11;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo10{
+        grid-area: paragrafo10;
+        font-size: 20px;
+    }
+    #video9{
+        grid-area: video9;
+        height: 100%;
+        margin: 0;
+    }
+    
+
+
+    #titulo12{
+        grid-area: titulo12;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo11{
+        grid-area: paragrafo11;
+        font-size: 20px;
+    }
+    #video10{
+        grid-area: video10;
+        height: 100%;
+        margin: 0;
+    }
+    #sa1{
+        grid-area: sa1;
+        display: flex;
+        width: 100%;
+        height: 97%;
+        
+    }
+    
+
+
+    #titulo13{
+        grid-area: titulo13;
+        text-align: center;
+        font-size: 35px;
+    }
+    #paragrafo12{
+        grid-area: paragrafo12;
+        font-size: 20px;
+    }
+
+    footer{
+        grid-area: footer;
+        font-size: 20px;
+    }
 }
